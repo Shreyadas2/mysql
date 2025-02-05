@@ -1,0 +1,17 @@
+-- Here are the basic commands we use before learning in depth of SQL.
+-- 
+
+show databases;
+-- shows the existing databases present
+
+create database db;
+-- its creates a new database named "db".
+
+use databasename;
+-- its is use to access which database you want to use in the existing database, like if you want to use the database you've created for example db, then you'll write
+use database db;
+
+
+drop database db;
+if you want to delete the database as a whole, like removing the existence of it
+
