@@ -1,0 +1,16 @@
+--- here you'll get an idea of how tables are created
+
+CREATE TABLE tablename(
+  table_id INT PRIMARY KEY,
+  firstname VARCHAR(250),
+  lastname VARCHAR(250),
+  date DATE);;
+
+PRIMARY KEY - Unique identifier among all unique ones. There's a known line "All Primary key are Unique Keys but all Unique Keys are not primary Key". 
+Datatypes in SQL:
+1. CHAR(SIZE): A fixed length string with length of characters ranges from(0 - 255), By default we take 1. 
+Generally we don't use this datatype because of it's fixed nature in their size, like if its char(20) then 
+20 blocks will be fixed whether the name contains 20 string characters or not.
+2. VARCHAR(SIZE): A variable length character can contain number, letter or  special character ranges from(0 - 65535).
+We generally use this as its not fixed in nature.
+3. 
