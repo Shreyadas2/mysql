@@ -4,7 +4,7 @@ CREATE TABLE tablename(
   table_id INT PRIMARY KEY,
   firstname VARCHAR(250),
   lastname VARCHAR(250),
-  date DATE);;
+  date DATE);
 
 PRIMARY KEY - Unique identifier among all unique ones. There's a known line "All Primary key are Unique Keys but all Unique Keys are not primary Key". 
 Datatypes in SQL:
@@ -13,4 +13,60 @@ Generally we don't use this datatype because of it's fixed nature in their size,
 20 blocks will be fixed whether the name contains 20 string characters or not.
 2. VARCHAR(SIZE): A variable length character can contain number, letter or  special character ranges from(0 - 65535).
 We generally use this as its not fixed in nature.
-3. 
+3. BINARY(SIZE): Equal to char but store binary data type
+4. BOOL: 0 is considered as False, but non-zeros are true.
+5. INT(SIZE): A medium integer. Signed range is from -2147483648 to 2147483647. Unsigned range is from 0 to 4294967295.
+The size parameter specifies the maximum display width (which is 255).
+6. BIGINT(SIZE): A large integer. Signed range is from -9223372036854775808 to 9223372036854775807. Unsigned range is from 0 to 18446744073709551615.
+The size parameter specifies the maximum display width (which is 255).
+7. DATE: Date format - YYYY-MM-DD
+8. DATETIME: Date and Time combination. YYYY-MM-DD hh-mm-ss.
+9. TIME: Time format. hh-mm-ss
+10. YEAR: A year in four digit format.
+
+These are the basic datatypes we use in learing sql.
+
+
+-- Deleting a table completely
+
+DROP TABLE tablename;
+
+-- Deleting the values inside a table but not the table;
+TRUNCATE TABLE tablename;
+
+-- Adding a column inside a table.
+ALTER TABLE tablename
+ADD columnname DATATYPE;
+
+-- Deleting a column inside a table.
+ALTER TABLE tablename
+DROP columnname;
+
+--Rename a column name
+ALTER TABLE tablename
+RENAME COLUMN oldcolumn TO newcolumn.
+
+--Modify datatype of a column
+ALTER TABLE tablename
+MODIFY COLUMN coumnname DATATYE  --(DATATYPE YOU WANNA GIVE).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
