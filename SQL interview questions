@@ -1,4 +1,4 @@
-How to find the nth highest salary in Employee table:
+1. How to find the nth highest salary in Employee table:
 SELECT(
 SELECT DISTINCT SALARY
 FROM Employee
