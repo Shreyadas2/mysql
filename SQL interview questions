@@ -1,0 +1,13 @@
+How to find the nth highest salary in Employee table:
+SELECT(
+SELECT DISTINCT SALARY
+FROM Employee
+ORDER BY Salary DESC
+LIMIT 1, OFFSET n)
+AS secondHighestSalary
+
+DISTINCT: return unique values
+ORDER BY: return the result order by salary table
+DESC: descending order
+LIMIT: How many column's you  need, here we need 1
+OFFSET: How man rows to skip from beginning
